@@ -1,0 +1,79 @@
+{
+    "data_prefix": "/home/ubuntu/data",
+    "data": {
+      "the_other_pi_larger": {
+        "parent_path": "/scroll_data/scroll_inkdetection/dataset_flat",
+        "url": "http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/",
+        "id": "20230519195952",
+        "crop": [330, 590, 33, 1200, 990, 40],
+        "post_download_rotation": 0
+      },
+      "small_promising_fragment": {
+        "parent_path": "/scroll_data/scroll_inkdetection/dataset_flat",
+        "url": "http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/",
+        "id": "20230526205020",
+        "crop": [781, 647, 25, 1862, 2224, 35],
+        "post_download_rotation": 60
+      },
+      "hari_new": {
+        "parent_path": "/scroll_data/scroll_inkdetection/dataset_flat",
+        "url": "http://dl.ash2txt.org/hari-seldon-uploads/team-finished-paths/scroll1/",
+        "id": "20230826135043",
+        "crop": [0, 0, 0, 10, 10, 10],
+        "post_download_rotation": 345
+      },
+      "hari_new_larger": {
+        "parent_path": "/scroll_data/scroll_inkdetection/dataset_flat",
+        "url": "http://dl.ash2txt.org/hari-seldon-uploads/team-finished-paths/scroll1/",
+        "id": "20230827161846",
+        "crop": [0, 0, 0, 10, 10, 10],
+        "post_download_rotation": 0
+      },
+      "caseys_pi_iota": {
+        "parent_path": "/scroll_data/scroll_inkdetection/dataset_flat",
+        "url": "http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/",
+        "id": "20230509182749",
+        "crop": [2364, 7152, 29, 3135, 8047, 42],
+        "post_download_rotation": 349
+      },
+      "hari_omega_closeup": {
+        "parent_path": "/scroll_data/scroll_inkdetection/dataset_flat",
+        "url": "http://dl.ash2txt.org/hari-seldon-uploads/team-finished-paths/scroll1/",
+        "id": "20230813_real_1",
+        "crop": [1101, 1624, 27, 1773, 2263, 43],
+        "post_download_rotation": 35
+      },
+      "first_letters_pi": {
+        "parent_path": "/scroll_data/scroll_inkdetection/dataset_flat",
+        "url": "http://dl.ash2txt.org/hari-seldon-uploads/team-finished-paths/scroll1/",
+        "id": "20230827161846",
+        "crop": [1459, 4155, 30, 2309, 5005, 35],
+        "post_download_rotation": 0
+      }
+    },
+  
+    "actions": [
+      {
+        "action": "train",
+        "data": ["the_other_pi_larger", "small_promising_fragment", "hari_omega_closeup", "caseys_pi_iota", "first_letters_pi"],
+        "epochs": 4,
+        "dataset_divisor": 100
+      },
+      {
+        "action": "save",
+        "filename": "model.pth"
+      },
+      {
+        "action": "infer",
+        "data": "hari_new_larger",
+        "step": [1, 10, 10],
+        "infer_on_all": true
+      },
+      {
+        "action": "infer",
+        "data": "hari_new",
+        "step": [1, 20, 20],
+        "infer_on_all": true
+      }
+    ]
+  }
