@@ -5,3 +5,5 @@ Get the submission text (with reproduction instructions) here: [google drive lin
 Get the labels here: [google drive link](https://drive.google.com/file/d/18XOyg_LKHpjVo0k57Eo0Wx6S9NoAFEpT/view?usp=sharing)
 
 You'll need to modify config.py to include the credentials to the scroll prize dataset server. You'll need to fill out the data form [here](https://scrollprize.org/data).
+
+Please don't hesistate to DM on X or on discord if you have any questions!
