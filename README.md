@@ -6,4 +6,4 @@ Get the labels here: [google drive link](https://drive.google.com/file/d/18XOyg_
 
 You'll need to modify config.py to include the credentials to the scroll prize dataset server. You'll need to fill out the data form [here](https://scrollprize.org/data).
 
-Please don't hesistate to DM on X or on discord if you have any questions!
+Please don't hesitate to DM on X or on discord if you have any questions!
